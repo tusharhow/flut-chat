@@ -55,7 +55,7 @@ class AuthService extends GetxController {
     await _auth.signOut();
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.clear();
-    pushRemove(context: context, widget: LoginScreen());
+    pushRemove(context: context, widget: const LoginScreen());
   }
 
   // show all users

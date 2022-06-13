@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {},
                       title: Text(
                         'Item $index',
-                        style: TextStyle(fontSize: 20),
+                        style:const TextStyle(fontSize: 20),
                       
                       ),
                     );

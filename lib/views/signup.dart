@@ -19,38 +19,38 @@ class SignUpScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             children: [
-              SizedBox(height: 20),
+           const   SizedBox(height: 20),
               TextFormField(
                 controller: authService.phoneController,
                 decoration: InputDecoration(
                   labelText: 'Phone',
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+                    borderSide:const BorderSide(color: Colors.grey),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+                    borderSide:const BorderSide(color: Colors.grey),
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 keyboardType: TextInputType.phone,
               ),
-              SizedBox(height: 20),
+          const    SizedBox(height: 20),
               TextFormField(
                 controller: authService.passController,
                 decoration: InputDecoration(
                   labelText: 'Password',
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+                    borderSide:const BorderSide(color: Colors.grey),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+                    borderSide:const BorderSide(color: Colors.grey),
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+           const   SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   authService.createUser(
@@ -61,14 +61,14 @@ class SignUpScreen extends StatelessWidget {
                 },
                 child: const Text('Sign Up'),
               ),
-              SizedBox(height: 20),
+             const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Already have an account?'),
+               const   Text('Already have an account?'),
                   TextButton(
                     onPressed: () {
-                      push(context: context, widget: LoginScreen());
+                      push(context: context, widget:const LoginScreen());
                     },
                     child: const Text('Login'),
                   ),

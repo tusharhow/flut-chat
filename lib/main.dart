@@ -1,5 +1,4 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flut_chat/components/navigate.dart';
 import 'package:flut_chat/views/homepage.dart';
 import 'package:flut_chat/views/login.dart';
 import 'package:flut_chat/views/signup.dart';
